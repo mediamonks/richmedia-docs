@@ -2,6 +2,7 @@
 layout: post
 title: Sample blog post
 subtitle: Each post also has a subtitle
+date: YYYY-MM-DD hh:mm:ss -0000
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
 tags: [test]
