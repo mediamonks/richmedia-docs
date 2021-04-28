@@ -22,6 +22,7 @@ So everything in this node will be added and parsed by webpack. So lets look at 
     "entry": {
       "js": "./script/main.js", // required: points to the starting js file.
       "html": "./index.html" // required: points to the main html file.
+      "html": "./index.hbs" // required: or you can point to a handlebar file
     },
     "size": {
       "width": 300, // required: width of richmedia unit
@@ -72,7 +73,7 @@ Below are some guides on how you can use these values in your creative.
 ### Using .richmediarc values in HTML
 
 In your index.html, you can retrieve .richmediarc values using the `data-bind` attribute on HTML elements. This is 
-made possible by the databind class which is imported by `./js/Banner.js`.
+made possible by the dataBind function which is imported by `./js/Banner.js`.
 
 For example:
 
@@ -109,9 +110,16 @@ In index.html:
 
 ```html
 <body>
-  <img class="background-image" data-bind="src: bg-img-url"></div>
+  <img class="background-image" data-bind="src: content.bg-img-url"></div>
 </body>
-```  
+```
+
+### Using .richmediarc values in HANDLEBARS
+If you chosen handlebars as your html file you can use handlebars notation to access the richmediarc data. @see https://handlebarsjs.com/guide/#what-is-handlebars for more documentation about how to use handlebars. 
+
+```
+
+```
 
 ### Using .richmediarc values in CSS
 
