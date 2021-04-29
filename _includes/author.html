@@ -1,7 +1,7 @@
-{% assign author = site[page.author] %}
+{% assign author_details = site[page.author_details] %}
 {% if author %}
 <span>
-    Written by {{ author.name }}
+    Written by {{ author_details.name }}
   </span>
 {% else %}
 <span>
