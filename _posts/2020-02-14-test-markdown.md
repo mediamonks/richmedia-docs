@@ -2,6 +2,7 @@
 layout: post
 title: Sample blog post
 subtitle: Each post also has a subtitle
+author: mient-jan_stelling
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
 tags: [test]

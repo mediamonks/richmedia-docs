@@ -2,7 +2,7 @@
 layout: post
 title: Introducing modular animation frames
 subtitle: better cross collaboration
-author: Frankie Bukenya
+author: frankie_bukenya
 tags: [animation, collaboration]
 comments: true
 ---
