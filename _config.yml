@@ -15,20 +15,13 @@ author: Mient-Jan Stelling
 
 navbar-links:
   Home: './index.html'
+  Richmedia generator: 'generator'
+  Getting started: 'getting-started'
+  Adjust a banner: 'adjusting-a-banner'
+  .richmediarc: 'richmediarc'
+  Richmedia temple server: 'devserver'
 
-  Docs:
-    - Richmedia generator: 'generator'
-    - Getting started: 'getting-started'
-    - Adjust a banner: 'adjusting-a-banner'
-    - .richmediarc: 'richmediarc'
-      - The content node: 'richmediarc/the-content-node'
-      - Basic .richmediarc concepts: 'richmediarc/basic-concepts'
-      - Advanced .richmediarc concepts: 'richmediarc/advanced-concepts'
-      - Feeds: 'richmediarc/feeds'
-    - Richmedia temple server: 'devserver'
-    Posts: ""
-
-
+#
 #     - Learn markdown: "https://www.markdowntutorial.com/"
 #   Author's home: "https://deanattali.com"
 
@@ -44,6 +37,7 @@ round-avatar: true
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
 #title-img: /path/to/image
+
 
 # --- Footer social media links --- #
 
@@ -79,7 +73,7 @@ rss-description: This website is a virtual proof that I'm awesome
 
 # --- General options --- #
 
-# Select which social network share links to show in _posts
+# Select which social network share links to show in posts
 share-links-active:
   twitter: false
   facebook: false
@@ -168,7 +162,7 @@ site-css:
 # See more details about the parameters below at https://utteranc.es/
 #utterances:
 #  repository: # GitHub username/repository eg. "daattali/beautiful-jekyll"
-#  issue-term: title   # Mapping between blog _posts and GitHub issues
+#  issue-term: title   # Mapping between blog posts and GitHub issues
 #  theme: github-light # Utterances theme
 #  label: blog-comments # Label that will be assigned to GitHub Issues created by Utterances
 
@@ -188,7 +182,7 @@ site-css:
 
 # --- Misc --- #
 
-# Ruby Date Format to show dates of _posts
+# Ruby Date Format to show dates of posts
 date_format: "%B %-d, %Y"
 
 # Facebook App ID
@@ -197,7 +191,7 @@ date_format: "%B %-d, %Y"
 # --- You don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "Netherlands/Amsterdam"
+timezone: "America/Toronto"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title.html
@@ -214,13 +208,14 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      author: ""
       comments: true  # add comments to all blog posts
       social-share: true # add social media sharing buttons to all blog posts
   -
     scope:
       path: "" # any file that's not a post will be a "page" layout by default
     values:
-      layout: "page"
+      layout: "pages"
 
 
 # Exclude these files from production site
