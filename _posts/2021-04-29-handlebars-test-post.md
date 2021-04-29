@@ -2,6 +2,7 @@
 layout: post
 title: Introducing Handlebars to the .richmediarc
 subtitle: building an even more powerful framework
+author: Frankie Bukenya
 tags: [handlebars]
 comments: true
 ---
