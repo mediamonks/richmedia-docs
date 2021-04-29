@@ -182,10 +182,11 @@ site-css:
 
 # --- Misc --- #
 # Author detials
-mient-jan_stelling:
-  name: Mient-Jan Stelling
-frankie_bukenya:
-  name: Frankie Bukenya
+author_details:
+  mient-jan_stelling:
+    name: Mient-Jan Stelling
+  frankie_bukenya:
+    name: Frankie Bukenya
 
 
 # Ruby Date Format to show dates of posts
