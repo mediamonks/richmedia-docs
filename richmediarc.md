@@ -301,13 +301,4 @@ When you replace API_KEY_PLACEHOLDER with your own api key <br><br> https://deve
 
 >**_Important:_** The Google sheet access needs to be set to public in order for this to work 
 
-<div class="container">
-    <div class="link__item">
-        <a href="./adjusting-a-banner.html"><i
-        class="fas fa-long-arrow-alt-left"></i> Adjusting a banner</a>
-    </div>
-		<div class="link__item">
-        <a href="./devserver.html">Richmedia Temple Server <i
-        class="fas fa-long-arrow-alt-right"></i></a>
-    </div>
-</div>
+[Adjusting a banner](./adjusting-a-banner.md) or [Go to development server (Richmedia Temple Server)](./devserver.md)

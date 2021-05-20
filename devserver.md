@@ -171,12 +171,4 @@ It will then upload the contents of the ./build/ directory and show you a link t
 `http://richmedia-previews-s3bucket-khpmpnjb2dya.s3.amazonaws.com/3334d7e2-3d58-4c84-aec7-4b6d4f50c7f0/index.html
 `
 
-<div class="container">
-    <div class="link__item">
-        <a href="./richmediarc.html"><i
-        class="fas fa-long-arrow-alt-left"></i> .richmediarc</a>
-    </div>
-		<div class="link__item">
-        <a href="./index.html">Home</a>
-    </div>
-</div>
+[.richmediarc](./richmediarc.md) or [Go back to home](./index.md)

@@ -109,13 +109,4 @@ created. The banner should display as a simple unit with a red background.
 
 If there are no javascript errors and everything works fine, that’s it!
 
-<div class="container">
-    <div class="link__item">
-        <a href="./generator.html"><i
-        class="fas fa-long-arrow-alt-left"></i> Richmedia generator</a>
-    </div>
-		<div class="link__item">
-        <a href="./adjusting-a-banner.html">Adjust a banner <i
-        class="fas fa-long-arrow-alt-right"></i></a>
-    </div>
-</div>
+[To the Generator](./generator.md) or [How to adjust a banner](./adjusting-a-banner.md)
