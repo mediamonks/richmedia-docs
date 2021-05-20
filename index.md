@@ -7,7 +7,7 @@ Here you will find all the documentation that you will need to, setup, create, e
 Where to start? here >> [Getting started](./getting-started.md) <<
 
  - [Generator](./generator.md)
- - [.richmediarc The config tool for your development units.](./richmediarc.md)
+ - [.richmediarc](./richmediarc.md) The config tool for your development units.
  - Handlebars
  - FrameAnimation
  - SpreadSheets
