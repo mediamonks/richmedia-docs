@@ -6,8 +6,8 @@ Here you will find all the documentation that you will need to, setup, create, e
 
 Where to start? here >> [Getting started](./getting-started.md) <<
 
- - Generator
- - .richmediarc The config tool for your development units.
+ - [Generator](./generator.md)
+ - [.richmediarc The config tool for your development units.](./richmediarc.md)
  - Handlebars
  - FrameAnimation
  - SpreadSheets
@@ -30,9 +30,4 @@ Where to start? here >> [Getting started](./getting-started.md) <<
     previewing you advertising display banners.
 </p>
 
-<div class="container">
-    <div class="link__item home">
-        <a href="./generator.html">Richmedia generator <i
-        class="fas fa-long-arrow-alt-right"></i></a>
-    </div>
-</div>
+[Richmedia generator](./generator.md)
