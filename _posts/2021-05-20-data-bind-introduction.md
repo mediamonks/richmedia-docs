@@ -68,7 +68,7 @@ and the html bindings would look like this
   <div class="banner border" data-bind="style.backgroundColor: bgcolor">
     <div class="content fullscreen">
       <div class="title_container">
-        <div class="title" data-bind="html: text"></div>
+        <div class="title" data-bind="html: text, style.backgroundColor: bgcolor"></div>
       </div>
       <img class="logo" data-bind="src: logo.Url">
       <div class="cta">
@@ -82,4 +82,12 @@ and the html bindings would look like this
 </body>
 </html>
 ```
+What happens here dataBind searches the `document.querySelector('body')` for data-bind attributes that you see 
+here in the html file.
 
+Then it looks what is the value of the attribute data-bind and applies the data data from the feed to the html.
+
+ - data-bind="html: text" | applies `html` to a element from the property `text` that comes from feed.
+ - data-bind="src: logo.Url" | applies `src` to a element from the property `logo.Url` that comes from feed.
+ - data-bind="href: logo.Url" | applies `href` to a element from the property `logo.Url` that comes from feed.
+ - data-bind="style.backgroundColor: bgcolor" | applies `style.backgroundColor` to a element from the property `bgcolor` that comes from feed.
