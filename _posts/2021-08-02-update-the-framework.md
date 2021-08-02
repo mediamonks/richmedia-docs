@@ -7,7 +7,7 @@ tags: [framework, updating, adapting, managing, git, syncing, fork, upstream, re
 comments: true
 ---
 
-#**Note: This is still a wip  version of the post**
+#Note: This is still a wip  version of the post
 
 ### Creating a fork
 First things first. If you want to create new code or amend existing code it's always safe to work in your own environment rather than on the master files.
