@@ -12,7 +12,7 @@ comments: true
 ### Creating a fork
 First things first. If you want to create new code or amend existing code it's always safe to work in your own environment rather than on the master files.
 In order to do this you can create a Fork from the repository you want to work on. In this example we are working on https://github.com/mediamonks/generator-richmedia-temple
-![Screenshot create a fork](../assets/img/update_the_framework_create_a_fork.gif)
+![Screenshot create a fork](./assets/img/update_the_framework_create_a_fork.gif)
 
 
 ###If you already have a fork and want to update it
@@ -71,7 +71,7 @@ $ git merge upstream/master
 Use NPM link for testing your code. NPM link gives you the ability to connect a local (test) repository with your current project instead of the online repository that by default is connected.
 
 Clone your forked generator-richmedia-temple to a local folder:
-![Screenshot clone](../assets/img/update_the_framework_clone.gif)
+![Screenshot clone](./assets/img/update_the_framework_clone.gif)
 
 
 Since we are testing with the generator, we need to make sure it uses our local generator-richmedia-temple folder files even before we generate a banner project.
@@ -85,7 +85,7 @@ At this moment, your local folder will be installed as the current generator-ric
 ```
 C:\Users\paulie\AppData\Roaming\npm\node_modules\@mediamonks\generator-richmedia-temple -> C:\git\m\mm-paulie\generator-richmedia-temple
 ```
-![Screenshot npm link](../assets/img/update_the_framework_npm_link.gif)
+![Screenshot npm link](./assets/img/update_the_framework_npm_link.gif)
 
 Create a new banner project using Yeoman:
 ```  
