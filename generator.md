@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Generator for richmedia
+title: Generator for richmedia units
 ---
 ## Initial setup
 ### _**Software required**_

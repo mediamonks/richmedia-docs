@@ -1,6 +1,6 @@
 ---
 layout: post
-title: using google spreadsheets in the feeds
+title: Using google spreadsheets in the feeds
 subtitle: using google spreadsheets in the feeds
 author: mientjan
 tags: [dataBind, inline]

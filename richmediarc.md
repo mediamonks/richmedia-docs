@@ -6,11 +6,22 @@ The .richmediarc file is one of the files that gets generated when you start a n
 
 You can find it in the root directory of your creative, i.e. /src/300x250.
 
-> _**Important:**_ Each creative requires at least one .richmediarc file
+> _**Important:**_ Each creative requires at least one .richmediarc file. Also file paths defined in the .richmediarc are ALWAYS relative to the .richmediarc itself.
 
-In a freshly generated project, the .richmediarc will look something like this
+### Topics
 
-> _**Important:**_ File paths defined in the .richmediarc are ALWAYS relative to the .richmediarc itself.
+- [The content node](#the-content-node)
+- [Basic .richmediarc concepts](#basic-richmediarc-concepts)
+  - [Using .richmediarc values in HTML](#using-richmediarc-values-in-html)
+  - [Using .richmediarc values in HANDLEBARS](#using-richmediarc-values-in-handlebars)
+  - [Using .richmediarc values in CSS](#using-richmediarc-values-in-css)
+  - [Using .richmediarc values in javascript](#using-richmediarc-values-in-javascript)
+- [Advanced .richmediarc concepts](#advanced-richmediarc-concepts)
+  - [Inheritance](#inheritance)
+- [Feeds (with Google Spreadsheet)](#feeds-with-google-spreadsheet)
+
+
+----
 
 ## The content node
 
@@ -20,13 +31,20 @@ So everything in this node will be added and parsed by webpack. So lets look at 
 {
   "settings": {
     "entry": {
+      "bundleName": "${content.type}_${settings.size.width}x${settings.size.height}", // not required: can modify the bundle output.
       "js": "./script/main.js", // required: points to the starting js file.
-      "html": "./index.html" // required: points to the main html file.
+      "html": "./index.html", // required: points to the main html file.
       "html": "./index.hbs" // required: or you can point to a handlebar file
     },
     "size": {
       "width": 300, // required: width of richmedia unit
       "height": 600 // required: height of richmedia unit
+    },
+    "optimizations": {
+      "css": false, // by default is enabled
+      "image": false, // by default is enabled
+      "js": false, // by default is enabled
+      "html": false // by default is enabled
     }
   },
   "content": {  // not required: can put anything in here.
@@ -115,11 +133,9 @@ In index.html:
 ```
 
 ### Using .richmediarc values in HANDLEBARS
-If you chosen handlebars as your html file you can use handlebars notation to access the richmediarc data. @see https://handlebarsjs.com/guide/#what-is-handlebars for more documentation about how to use handlebars. 
+If you chosen handlebars as your html file you can use handlebars notation to access the richmediarc data. see  [what is handlebars](https://handlebarsjs.com/guide/#what-is-handlebars) for more documentation about how to use handlebars. 
 
-```
 
-```
 
 ### Using .richmediarc values in CSS
 
@@ -156,7 +172,7 @@ In `.richmediarc`:
 
 ```json
 "settings": {
-	"size": {
+  "size": {
     "width": 300,
     "height": 250
   }
@@ -201,12 +217,21 @@ In .richmediarc:
 In Animation.js:
 
 ```js
-export default class Animation {
+export default class Animation extends FrameAnimation {
+  /**
+   *
+   * @param {HTMLDivElement} container
+   * @param {null} config
+   */
   constructor(container, config) {
+    super();
+
+    this.container = container;
+
     if (config.content.intro) {
-      // play intro
+      // something
     } else {
-      // play main animation
+      // something else
     }
   }
 }
@@ -268,7 +293,7 @@ As shown in the example above, in the French `.richmediarc`, we only specify the
 
 This method is very useful and scalable, should the need arise to add even more languages or versions.
 
-## Feeds
+## Feeds (with Google Spreadsheet)
 You are able to link to a Google spreadsheet, so you can build multiple units with one code base and one `.richmediarc`.
 When you replace `API_KEY_PLACEHOLDER` with your own api key.
 

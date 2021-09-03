@@ -1,6 +1,6 @@
 ---
 layout: post
-title: adding a bundleName
+title: Adding a bundleName
 subtitle: So you define how your banner is called
 author: mientjan
 tags: [dataBind, inline]
