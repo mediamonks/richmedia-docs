@@ -25,7 +25,7 @@ Up to you if you want to send them statistics. Hit either **Y** or **N**.
 
 After you make your selection, the following menu appears
 
-![Scaffold1](./assets/img/scaffold1.jpg)
+![Scaffold1](./assets/img/scaffold1.JPG)
 
 In this menu you can use the arrow keys to navigate the cursor.
 
@@ -42,18 +42,18 @@ Enter the name of the project or just hit enter to use the default, which is the
 Select the first unit you would like the generator to create. Use the arrow keys to navigate and hit `Enter`
 when ready.
 
-![Scaffold2](./assets/img/scaffold2.jpg)
+![Scaffold2](./assets/img/scaffold2.JPG)
 
 Enter the directory where you wish the source files to be placed. Just hit enter to use the default, which is something 
 like `./src/{size}x{width}`
 
 Select the type of banner:
 
-![Scaffold3](./assets/img/scaffold3.jpg)
+![Scaffold3](./assets/img/scaffold3.JPG)
 
 Then you will have to answer which units you want to have their own html. You will need to answer the same with the `CSS` and the `JS`:
 
-![Scaffold4](./assets/img/scaffold4.jpg)
+![Scaffold4](./assets/img/scaffold4.JPG)
 
 <!-- For the purposes of this guide, select `plain`. -->
 
@@ -75,7 +75,7 @@ directory that you executed the generator on.
 | .prettierrc                  | A configuration file for prettier printer
 | [package.json](./package-json.md)                 | A configuration file for NPM / YARN, one of the most important files in your project. |
 
-![SannerStructure](./assets/img/banner_structure.jpg)
+![SannerStructure](./assets/img/banner_structure.JPG)
 
 To start developing you need to run a [webpack](https://webpack.js.org/) server. Setting up a webpack server is a bit of a 
 hassle that's why the [generator](./generator.md) and the [richmedia-temple-server](./devserver.md) do this for you in conjuction 
@@ -99,12 +99,12 @@ Your primary browser will launch, opening [http://localhost:8000/](http://localh
 
 In your terminal, you’ll be able to see the output of webpack, compiling the source code.
 
-![Scaffold5](./assets/img/scaffold5.jpg)
+![Scaffold5](./assets/img/scaffold5.JPG)
 
 In your browser, the preview environment will load along with a preview of the compiled version of the banner you just 
 created. The banner should display something like this.
 
-![Scaffold6](./assets/img/scaffold6.jpg)
+![Scaffold6](./assets/img/scaffold6.JPG)
 
 If there are no javascript errors and everything works fine, that’s it!
 
