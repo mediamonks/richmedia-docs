@@ -113,11 +113,13 @@ In this case it will actually use the generator that is locally on your computer
 ### Commit your changes
 If you have a ticket/issue that will be closed with your amends, you can add to your commit title: `closes #xxx` and it will automatically be noticed that the ticket needs to be closed
 
-push the commit in your own fork
+- push the commit in your own fork
 
-create a new npm version patch/minor/major
+- create a new npm version patch/minor/major
 
-Create a merge-request
+- push the new version number (tag) in your own fork
+
+- Create a merge-request
 
 
 ### And now I want to unlink my local package?
