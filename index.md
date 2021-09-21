@@ -14,5 +14,5 @@ Where to start? here >> [Getting started](./getting-started.md) <<
 
 ----
 
-# Recent updates
+# Recent updates:
 
